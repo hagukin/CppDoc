@@ -18,3 +18,6 @@ char 배열은 문자열 형태로 한번에 초기화가 가능하다.
 char test[100] = "Hello World";
 // 빈공간은 null로 채워짐
 ```
+
+TCHAR, WCHAR - 유니코드와 MBCS  
+https://redcoder.tistory.com/137  
