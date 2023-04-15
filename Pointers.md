@@ -21,3 +21,12 @@ class A : public enable_shared_from_this<A>
 	a = shared_from_this(); // 내부적으로는 weak_ptr를 사용
 }
 ```  
+* void pointer
+전반적으로 컴파일러마다 구현에 편차가 많다, C에서 generic function을 구현할 때 템플릿 대신 사용된다.  
+https://www.geeksforgeeks.org/void-pointer-c-cpp/  
+```c++
+int a = 10;
+void* ptr = &a;
+cout << *ptr; // 에러
+cout << *(int*)ptr; // Fine!
+```
