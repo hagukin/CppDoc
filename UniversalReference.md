@@ -62,3 +62,4 @@ void f(std::vector<T>&& param); // rvalue ref
 ```
 이 경우 타입이 vector<T>로 분명하기 때문에 rvalue이다!  
 7) 실제 문제 사례: IOCP PacketHandler 18:00가량부터 흥미로운 사례가 나온다.  
+해결법을 눈여겨 볼 필요가 있는데, [std::remove_reference](https://2pound2pound.tistory.com/254)를 사용해 타입만을 추출하는 방식으로 Type&*꼴에서 발생하는 문법오류를 잡아주었다.  
