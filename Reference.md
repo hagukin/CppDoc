@@ -5,7 +5,6 @@
 https://blog.insane.pe.kr/1449  
 
 ## 개념 정리
-원문 내용 출처 - 수까락의 프로그래밍 이야기  
 다 정리하기엔 양이 많고, 핵심 부분들만 간추렸다. 추가적인 정보는 원문 참조  
 
 1) &&라고 다 rvalue reference를 의미하는 게 아니다.  
@@ -62,3 +61,4 @@ template <typename T>
 void f(std::vector<T>&& param); // rvalue ref
 ```
 이 경우 타입이 vector<T>로 분명하기 때문에 rvalue이다!  
+7) 실제 문제 사례: IOCP PacketHandler 18:00가량부터 흥미로운 사례가 나온다.  
