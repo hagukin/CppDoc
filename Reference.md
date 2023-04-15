@@ -1,13 +1,10 @@
-* 보편 참조(Universal Reference, AKA Forwarding Reference)  
+# 보편 참조(Universal Reference, AKA Forwarding Reference)  
 생각보다 상당히 중요한 개념이므로 잘 이해하자.  
-모던 C++의 정수가 담겨있다.  
 
 [참고글 - 권장](http://egloos.zum.com/sweeper/v/3149089)  
-https://youtu.be/rVN-oCxAXrQ  
 https://blog.insane.pe.kr/1449  
 
-
-정리
+## 개념 정리
 원문 내용 출처 - 수까락의 프로그래밍 이야기  
 다 정리하기엔 양이 많고, 핵심 부분들만 간추렸다. 추가적인 정보는 원문 참조  
 
@@ -65,4 +62,3 @@ template <typename T>
 void f(std::vector<T>&& param); // rvalue ref
 ```
 이 경우 타입이 vector<T>로 분명하기 때문에 rvalue이다!  
-
